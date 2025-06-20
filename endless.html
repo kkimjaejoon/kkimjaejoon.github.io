@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM JAE JOON | Endless</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/work.css">
+</head>
+<body>
+    <div class="work-container">
+        <div class="work-main-content">
+            <div class="work-caption">
+                <h1>&lt;Endless&gt;</h1>
+                <br>
+                <p>2025</p>
+                <p>Documentary</p>
+                <p>Producer, Director, D.P., Editor</p>
+                <br>
+                <p>Cadejo’s bassist Jaeho once said this to me: “When I was trying so hard to be good, no one really noticed. But once I started making mistakes while just being myself, people finally began to see me.” Did you know that in Korean, the word “Areumdapda” (which means “beautiful”) is said to have “Areum” — meaning “me (我)” — at its root? So in a way, to be beautiful can also mean to be true to yourself. I made a documentary capturing the studio recording process of Cadejo’s 4th album, [ENDLESS] — a band that plays more beautifully, more themselves, than anyone I know. You can watch it now on Cadejo’s official YouTube channel. Hope you enjoy it.</p>
+            </div>
+            <div class="work-visual">
+                <div class="work-visual-container">
+                    <iframe src="https://www.youtube.com/embed/8dePmBTsorc?si=A46IsiqX1bppKzFR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="work-gallery">
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/01.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/02.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/03.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/04.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/05.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/06.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/07.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/08.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/09.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/10.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/11.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/12.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/13.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/14.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/15.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/16.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/17.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/18.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/19.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/endless/20.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script>
+        var grid = document.querySelector('.grid');
+
+        var msnry = new Masonry( grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            horizontalOrder: true,
+            gutter:10,
+            originLeft: false
+        });
+
+        imagesLoaded( grid ).on( 'progress', function() {
+            msnry.layout();
+        });
+    </script>
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+     </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.about-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.about-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.about-contacts {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        font-size: clamp(12px, 4vw, 1.5rem);
+    }
+}

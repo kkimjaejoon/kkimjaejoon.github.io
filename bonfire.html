@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM JAE JOON | Bonfire</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/work.css">
+</head>
+<body>
+    <div class="work-container">
+        <div class="work-main-content">
+            <div class="work-caption">
+                <h1>&lt;Bonfire&gt; by CIFIKA</h1>
+                <br>
+                <p>2024</p>
+                <p>Live Performance</p>
+                <p>Director, D.P., Editor</p>
+                <br>
+                <p>This video captures the live session of musician CIFIKA’s third album [Bonfire], recorded at EQL Seongsu last November. Special attention was given to carefully plan and execute both filming and direction, vividly portraying the energy of the space and the artist’s performance.</p>
+            </div>
+            <div class="work-visual">
+                <div class="work-visual-container">
+                    <iframe src="https://www.youtube.com/embed/WJHS-i_OERE?si=aDqETWznnPmXhxnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="work-visual-container">
+                    <iframe src="https://www.youtube.com/embed/7kwetpchVvw?si=a0DvhZvZOHW0HQxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="work-gallery">
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/01.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/02.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/03.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/04.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/05.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/06.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/07.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/08.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/09.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/10.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/11.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/12.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/13.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+                <div class="grid-item">
+                    <img src="/assets/pages/bonfire/14.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script>
+        var grid = document.querySelector('.grid');
+
+        var msnry = new Masonry( grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            horizontalOrder: true,
+            gutter:10,
+            originLeft: false
+        });
+
+        imagesLoaded( grid ).on( 'progress', function() {
+            msnry.layout();
+        });
+    </script>
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+     </script>
+</body>
+</html>

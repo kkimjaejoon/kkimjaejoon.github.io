@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM JAE JOON | ABOUT</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/about.css">
+</head>
+<body>
+    <div class="about-container">
+        <div class="about-content">
+            <p class="about-contacts"><a href="mailto:info.kimjaejoon@gmail.com">info.kimjaejoon@gmail.com</a></p>
+            <p class="about-contacts"><a href="https://instagram.com/kkimjaejoon">@kkimjaejoon</a></p>
+            <p class="about-contacts"><a href="https://instagram.com/kkimjaejoon">vimeo</a></p>
+            <br>
+            <br>
+            <br>
+            <p>김재준은 서울에서 활동하는 독립 필름메이커다. 극영화부터 다큐멘터리, 뮤직비디오까지 다양한 형식을 넘나들며, 장르와 형식의 경계를 허물고 이야기의 본질을 시각적으로 탐구하는 데 몰두하고 있다. 다만, 요리에서만큼은 퓨전을 별로 좋아하지 않는다.</p>
+            <br>
+            <p>Kim Jae Joon is an independent filmmaker based in Seoul, South Korea. From narratives to documentaries and music videos, he crosses genres and forms in pursuit of stories that speak through visuals. He embraces creative hybridity in film - but when it comes to food, fusion is where he draws the line.</p>
+            <br>
+            <br>
+            <br>
+            <p class="about-contacts"><a href="index.html" class="about-home-link">← Back</a></p>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+     </script>
+</body>
+</html>
