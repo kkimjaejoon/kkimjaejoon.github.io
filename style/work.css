@@ -1,3 +1,7 @@
+body {
+    padding-bottom: 80px!important;
+}
+
 .grid-sizer,
 .grid-item {
   width: 32.3%;
@@ -42,7 +46,7 @@
 }
 
 /* Work Visual Container 16:9 */
-.work-visual-container {
+.work-visual-container-reframe {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; 
@@ -50,13 +54,14 @@
   overflow: hidden;
 }
 
-.work-visual-container iframe {
+.work-visual-container-reframe iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+/* End */
 
 .work-caption {
     font-size: 1.5rem;
