@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIM JAE JOON | I See</title>
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/work.css">
+    <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style/work.css">
 </head>
 <body>
     <div class="work-container">
@@ -80,7 +80,7 @@
     </script>
     <div id="footer-container"></div>
     <script>
-        fetch('footer.html')
+        fetch('/footer.html')
             .then(res => res.text())
             .then(data => {
                 document.getElementById('footer-container').innerHTML = data;
