@@ -1,29 +1,29 @@
 .about-container {
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .about-content {
-    margin-top: 40px;
-    max-width: 800px;
-    padding: 20px;
+  margin-top: 40px;
+  max-width: 800px;
+  padding: 20px;
 }
 
 .about-contacts {
-    text-align: center;
-    font-size: 2rem;
-    line-height: 1.7;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.7;
 }
 
 @media screen and (max-width: 768px) {
-    .about-container {
-        font-size: clamp(12px, 4vw, 1.5rem);
-    }
-    
-    .about-contacts {
-        font-size: clamp(16px, 6vw, 2rem);
-    }
+  .about-container {
+    font-size: clamp(12px, 4vw, 1.5rem);
+  }
+
+  .about-contacts {
+    font-size: clamp(16px, 6vw, 2rem);
+  }
 }

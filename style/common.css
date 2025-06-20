@@ -3,48 +3,129 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 a,
 a:link,
@@ -53,69 +134,66 @@ a:visited {
   text-decoration: none;
 }
 
-
 /* Common styles */
 
 a:hover {
-    color: red!important;
+  color: red !important;
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: 'EB Garamond', serif !important;
-    line-height: 1.2;
+  background-color: black;
+  color: white;
+  font-family: "EB Garamond", serif !important;
+  line-height: 1.2;
 }
 
 /* Footer */
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,1);
-    text-align: center;
-    font-size: 2rem;
-    z-index: 1000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-size: 2rem;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10px;
 }
 
 #about {
-    text-align: left;
-    padding-left: 20px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 #contacts {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
 
 #contacts img {
-    width: 50px;
+  width: 50px;
 }
 
 #contacts a:first-child img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .white-icon {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        font-size: clamp(18px, 4vw, 2rem);
-        padding: 18px 0;
-    }
+  .footer {
+    font-size: clamp(18px, 4vw, 2rem);
+    padding: 18px 0;
+  }
 
-    #contacts img {
-        width: clamp(32px, 10vw, 50px);
-    }
+  #contacts img {
+    width: clamp(32px, 10vw, 50px);
+  }
 }
-
-
