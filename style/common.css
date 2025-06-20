@@ -86,18 +86,36 @@ body {
 #about {
     text-align: left;
     padding-left: 20px;
-
 }
 
 #contacts {
-    text-align: right;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
     padding-right: 20px;
+}
+
+#contacts img {
+    width: 50px;
+}
+
+#contacts a:first-child img {
+    margin-right: 20px;
+}
+
+.white-icon {
+    filter: brightness(0) invert(1);
 }
 
 @media screen and (max-width: 768px) {
     .footer {
         font-size: clamp(18px, 4vw, 2rem);
-        padding-bottom: 20px;
+        padding: 18px 0;
+    }
+
+    #contacts img {
+        width: clamp(32px, 10vw, 50px);
     }
 }
+
 
