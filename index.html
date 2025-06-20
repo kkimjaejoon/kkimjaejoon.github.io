@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+            <a href="i-see.html">
+                <div>
+                    <img src="https://freight.cargo.site/w/1280/q/75/h/720/i/F2412212687827814142625903460167/.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                    <video playsinline="true" autoplay loop muted src="/assets/video/Endless.mp4" preload="metadata" part="video video-playing"></video>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <div>
+                <img src="https://freight.cargo.site/w/1280/q/75/h/768/i/T2412370963529850973119234621255/.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                <video playsinline="true" autoplay loop muted src="/assets/video/EH!.mp4" preload="metadata" part="video video-playing"></video>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div>
+                <img crossorigin="" src="https://freight.cargo.site/w/1280/q/75/h/720/i/A2412381036669600327399247363911/.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                <video playsinline="true" autoplay loop muted src="/assets/video/FromApartment.mp4" preload="metadata" part="video video-playing"></video>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div>
+                <img crossorigin="" src="https://freight.cargo.site/w/1280/q/75/h/640/i/F2412396618818786830594592915271/.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                <video playsinline="true" autoplay loop muted src="/assets/video/ShutDown.mp4" preload="metadata" part="video video-playing"></video>
+            </div>
+       </div>
+         <div class="grid-item">
+            <div>
+                <img crossorigin="" src="https://freight.cargo.site/w/1280/q/75/h/640/i/H2412416299022849772809087270727/1.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                <video playsinline="true" autoplay loop muted src="/assets/video/Bonfire.mp4" preload="metadata" part="video video-playing"></video>
+            </div>
+        </div>
+         <div class="grid-item">
+            <div>
+                <img crossorigin="" src="https://freight.cargo.site/w/960/q/75/h/720/i/O2412426645488006067243526307655/1.jpg" decoding="sync" part="poster poster-playing" class="media ">
+                <video playsinline="true" autoplay loop muted src="/assets/video/ISee.mp4" preload="metadata" part="video video-playing"></video>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script>
+        var grid = document.querySelector('.grid');
+
+        var msnry = new Masonry( grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            horizontalOrder: true
+        });
+
+        imagesLoaded( grid ).on( 'progress', function() {
+            msnry.layout();
+        });
+    </script>
+</body>
+</html>
