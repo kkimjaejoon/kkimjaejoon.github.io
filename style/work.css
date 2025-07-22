@@ -71,6 +71,10 @@ body {
   font-style: italic;
 }
 
+.about-home-link {
+  font-size: clamp(16px, 6vw, 2rem);
+}
+
 @media screen and (max-width: 768px) {
   /* 5 columns for larger screens */
   .grid-sizer,

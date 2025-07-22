@@ -26,7 +26,7 @@
 }
 
 #home {
-  font-size: 3rem;
+  font-size: clamp(18px, 6vw, 2rem);
 }
 
 .about-korean {
@@ -37,10 +37,6 @@
   .about-container {
     font-size: clamp(12px, 4vw, 1.5rem);
     justify-content: flex-start;
-  }
-
-  #home {
-    font-size: clamp(18px, 6vw, 2rem);
   }
 
   .about-contacts-container {
